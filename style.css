@@ -91,7 +91,17 @@ ul {
   }
   @media screen and (max-width: 600px) {
     .column {
-      display: block;
       width: 100%;
+      display: block;
+      height: auto;
+  
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .middle img{
+      width: 250px;
+      border-radius: 50%;
+    
+  
     }
   }
