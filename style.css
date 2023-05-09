@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 
 }
 ul {
@@ -101,12 +102,12 @@ ul {
     .middle {
       width: 100%;
       height: auto;
-
       border-radius: 15px;
     }
   }
   @media screen and (max-width: 600px) {
     .middle img{
+      height: 250px;
       width: 250px;
       border-radius: 50%;
     }
