@@ -33,11 +33,10 @@ ul {
   .row{
     margin-left:25%;
     padding:1px 16px;
-    height:1000px;
+    height:100vh;
   }
   .row{
     width: 75%;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,10 +45,11 @@ ul {
     background-color: rgb(34, 11, 11);
   }
 .column{
+  margin: 10px;
     padding: 25px;
     float: left;
     width: 20%;
-    height: 350px;
+    height: 450px;
     background-color: antiquewhite;
     border-radius: 15px;
   }
@@ -57,6 +57,7 @@ ul {
     color: #4d0d15;
     margin: 10px;
     padding: 10px;
+    
 
   }
   h3{
@@ -82,6 +83,7 @@ ul {
   
   .middle{
     width: 35%;
+    height: 450px;
     position: relative;
     border: 3px solid ;
   }
@@ -90,30 +92,30 @@ ul {
     border-radius: 50%;
     top: 5px;
   }
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      height: auto;
-  
-    }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
-  @media screen and (max-width: 600px) {
-    .middle {
+  @media only screen and (max-width:600px) { 
+    .row{
       width: 100%;
       height: auto;
-      border-radius: 15px;
+      justify-content: center;
+      align-items: center;
+        display: flex;
+        flex-direction:column;
     }
-  }
-  @media screen and (max-width: 600px) {
-    .middle img{
-      height: 250px;
-      width: 250px;
-      border-radius: 50%;
+    .column{
+      margin: 20px;
+      padding:15px;
+      padding-right: 5%;
+      justify-content: center;
+      align-items: center;
+      width:70%;
     }
-  }
-  @media screen and (max-width: 600px) {
-    .row {
-      flex-direction: column;
+    .left{
+      justify-content: center;
+      padding: 50px;
     }
   }
