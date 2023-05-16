@@ -118,4 +118,7 @@ ul {
       justify-content: center;
       padding: 50px;
     }
+    .middle img{
+      width: 200px;
+    }
   }
